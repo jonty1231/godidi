@@ -25,7 +25,9 @@ app.use("/api/user",userRouter)
 app.use("/api/driver",driverRouter)
 app.use("/api/bot",botRouter)
 
-
+app.get("/",async(req,res)=>{
+res.send("server is running")
+})
 
 
 
