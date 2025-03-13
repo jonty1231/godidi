@@ -15,7 +15,7 @@ app.use(express.json())
 const frontendLink="https://vishal.futuretouch.org"
 
 app.use(cors({
-    origin: frontendLink,  
+    origin: "*",  
     methods: ["GET", "POST"],
     credentials: true ,
     allowedHeaders: ["Content-Type", "Authorization"]
